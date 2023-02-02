@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+}
+.app{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(../src/assetes/d2.jpg);
+    background-size: cover;
+    background-position: center center;
+    color:#fff
+}
+.app:before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+.app .container{
+    width: 70%;
+    height: 90%;
+    margin:auto;
+    position: relative;
+padding: 20px;
+display: flex;
+flex-direction: column;
+padding-top:5%;
+justify-content: space-between;
+}
+.app .desc{
+    margin-top: 17px;
+}
+.app .desc .temp{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.app .desc .cloud{
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    transform: rotate(268deg);
+    top:23%
+
+}
+.app  .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: rgba(255,255,255,.4);
+    padding: 13px 0 ;
+    border-radius: 12px;
+    text-align: center;
+}
+.app  .bottom h3{
+    font-size: 23px;
+}
+.app  .bottom p{
+    font-size: 20px;
+    
+}
+.search{
+  text-align: center;
+  padding: 10px 0 ;
+  position: relative;
+}
+.search input{
+    padding: 10px 60px 10px 20px;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,.4);
+    border: 0;
+    border: 1px solid  rgba(255,255,255,.4);
+    outline:0;
+}
+.search input::placeholder{
+    color: rgba(255,255,255,.9);
+}
